@@ -1,5 +1,7 @@
 # Neon Courier: UnderCity — Landing Page Oficial 🚀🎮
 
+https://jhonata-franca.github.io/lab-natty-or-not/
+
 ## 🎯 Contexto do Desafio
 Projeto desenvolvido para o Desafio de Projeto **"Natural ou Fake Natty? Como Vencer na Era das IAs Generativas"** da **DIO (Digital Innovation One)**, com foco em explorar o potencial criativo de IAs Generativas para a criação de conteúdos realistas aplicados ao universo de games e desenvolvimento web.
 
