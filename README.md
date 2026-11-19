@@ -28,11 +28,11 @@ Conceituação completa da landing page de lançamento de **Neon Courier: UnderC
 
 ### 📸 Artes Conceituais & Mockups
 
-#### 1. Conceito Visual da Landing Page
-![Conceito da Landing Page](banner.jpg)
-
-#### 2. Arte Panorâmica do Mundo Subterrâneo (Worldbuilding)
+#### 1. Banner Principal (Hero Header & Worldbuilding)
 ![Arte Panorâmica](banner2.jpg)
+
+#### 2. Mockup da Interface da Landing Page
+![Conceito da Landing Page](banner.jpg)
 
 #### 3. Piloto em Ação nos Túneis (Action Concept)
 ![Piloto em Ação](banner1.jpg)
