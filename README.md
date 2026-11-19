@@ -28,7 +28,7 @@ Conceituação completa da landing page de lançamento de **Neon Courier: UnderC
 
 ### 📸 Artes Conceituais do Jogo e da Página
 *(Dica: ajuste o nome do arquivo abaixo para o nome exato da imagem que você subiu)*
-![Hero Banner - Neon Courier](banner.jpg)
+![Hero Banner - Neon Courier](banner1.jpg)
 
 ### ✍️ Destaques da Landing Page
 > **"A cidade não dorme. E a morte não espera."**  
