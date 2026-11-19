@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Courier: UnderCity — Site Oficial</title>
+  <!-- Fonte com pegada moderna e futurista -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #080B14;
+      --cyan: #00D9FF;
+      --magenta: #EC35C9;
+      --text: #E0E6ED;
+      --card-bg: rgba(16, 22, 38, 0.85);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section (Banner do Topo) */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to bottom, rgba(8, 11, 20, 0.3), var(--bg-dark)), url('banner2.jpg') center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px var(--cyan), 0 0 30px var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+
+    .slogan {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-weight: 700;
+      color: var(--magenta);
+      text-shadow: 0 0 10px rgba(236, 53, 201, 0.6);
+      margin-bottom: 2rem;
+    }
+
+    /* Botão Neon com Efeito Hover */
+    .btn-neon {
+      display: inline-block;
+      padding: 14px 32px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--bg-dark);
+      background-color: var(--cyan);
+      border: 2px solid var(--cyan);
+      border-radius: 4px;
+      box-shadow: 0 0 20px var(--cyan);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-neon:hover {
+      background-color: transparent;
+      color: var(--cyan);
+      box-shadow: 0 0 30px var(--cyan), inset 0 0 15px var(--cyan);
+      transform: translateY(-3px);
+    }
+
+    /* Conteúdo Principal */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #fff;
+      text-shadow: 0 0 10px var(--magenta);
+      position: relative;
+    }
+
+    /* Sinopse em 2 colunas */
+    .synopsis-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+
+    .synopsis-text p {
+      margin-bottom: 1.2rem;
+      font-size: 1.25rem;
+    }
+
+    .synopsis-text strong {
+      color: var(--cyan);
+    }
+
+    .synopsis-img img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 217, 255, 0.3);
+      box-shadow: 0 0 25px rgba(0, 217, 255, 0.2);
+    }
+
+    /* Cards de Features */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--cyan);
+      padding: 2rem;
+      border-radius: 0 8px 8px 0;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--magenta);
+      box-shadow: 0 12px 28px rgba(236, 53, 201, 0.2);
+    }
+
+    .feature-card h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    /* Avaliação da Crítica */
+    .quote-box {
+      background: rgba(236, 53, 201, 0.08);
+      border-left: 4px solid var(--magenta);
+      padding: 2.5rem;
+      margin: 4rem 0;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .quote-box blockquote {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .quote-box cite {
+      color: var(--cyan);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Galeria / Imagem de Ação */
+    .action-banner {
+      width: 100%;
+      margin: 3rem 0;
+      border-radius: 8px;
+      border: 1px solid rgba(236, 53, 201, 0.3);
+      box-shadow: 0 0 30px rgba(236, 53, 201, 0.25);
+    }
+
+    /* Call to Action Final */
+    .cta-section {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      background: radial-gradient(circle at center, rgba(0, 217, 255, 0.15), transparent 70%);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6c7d93;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Neon Courier: UnderCity</h1>
+      <p class="slogan">A cidade não dorme. E a morte não espera.</p>
+      <p style="margin-bottom: 2rem; color: #b8c7d9;">Você não entrega pacotes. Você entrega destinos.</p>
+      <a href="#cta" class="btn-neon">Entrar no Submundo</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- SINOPSE -->
+    <section class="synopsis-grid">
+      <div class="synopsis-text">
+        <h2 style="font-family: 'Orbitron'; font-size: 2rem; color: var(--cyan); margin-bottom: 1.5rem;">Entre na UnderCity</h2>
+        <p>A chuva nunca para. Os neons nunca apagam. Nas profundezas de uma metrópole dominada por megacorporações, a lei é apenas mais uma mercadoria à venda.</p>
+        <p>Você é um <strong>entregador clandestino</strong> cruzando túneis esquecidos e becos proibidos a bordo de uma moto voadora, transportando cargas que muitos matariam para recuperar.</p>
+        <p>Cada entrega é uma aposta contra o tempo, drones de perseguição e forças corporativas. Não diminua a velocidade.</p>
+      </div>
+      <div class="synopsis-img">
+        <img src="banner.jpg" alt="Mockup da interface de Neon Courier">
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <h2 class="section-title">Por que Acelerar?</h2>
+    <section class="features-grid">
+      <article class="feature-card">
+        <h3>01. Velocidade Ilegal</h3>
+        <p>Pilote sua moto voadora por túneis subterrâneos, atalhos perigosos e corredores estreitos. Seus reflexos rápidos são sua única vantagem.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>02. Caçado pelo Sistema</h3>
+        <p>Fuja de drones armados, bloqueios corporativos e forças de segurança. Cada entrega pode transformar você no alvo mais procurado da cidade.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>03. Sobreviva e Evolua</h3>
+        <p>Aprimore sua moto, domine rotas clandestinas e prepare-se para entregas cada vez mais arriscadas. Na UnderCity, cada segundo conta.</p>
+      </article>
+    </section>
+
+    <!-- IMAGEM DE AÇÃO -->
+    <section style="text-align: center;">
+      <h2 class="section-title">Piloto em Fuga</h2>
+      <img src="banner1.jpg" alt="Piloto cruzando túneis em alta velocidade" class="action-banner">
+    </section>
+
+    <!-- CITAÇÃO -->
+    <section class="quote-box">
+      <blockquote>"Neon Courier: UnderCity transforma cada corrida em uma fuga cinematográfica. Uma experiência eletrizante onde a velocidade é sua única esperança."</blockquote>
+      <cite>— NEON PULSE MAGAZINE</cite>
+    </section>
+
+    <!-- CALL TO ACTION FINAL -->
+    <section id="cta" class="cta-section">
+      <h2 style="font-family: 'Orbitron'; font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">O sistema não vai esperar. Você vai?</h2>
+      <p style="margin-bottom: 2rem; color: #b8c7d9;">Prepare seu motor. Escolha sua rota. Entre para o submundo.</p>
+      <a href="https://github.com/jhonata-franca/lab-natty-or-not" target="_blank" class="btn-neon">Adicionar à Lista de Desejos</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Neon Courier: UnderCity &copy; 2026. Projeto desenvolvido para o Desafio de IAs Generativas da DIO.</p>
+  </footer>
+
+</body>
+</html>
