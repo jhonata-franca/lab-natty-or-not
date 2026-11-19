@@ -15,6 +15,10 @@ Conceituação completa da landing page de lançamento de **Neon Courier: UnderC
 ## 🤖 Tecnologias Utilizadas
 - **ChatGPT / Claude:** Geração de *copywriting*, estrutura da landing page, slogan, narrativa (*lore*) e features de jogabilidade.
 - **Bing Image Creator / Microsoft Copilot Designer:** Geração das artes conceituais, cenários, atmosfera e mockups visuais do jogo e do site.
+- - **Kling AI:** Geração do teaser em vídeo com física realista e animação de câmera cinematográfica.
+
+  
+- **Suno AI:** Geração da trilha sonora oficial instrumental no estilo *Dark Synthwave / 80s Cyberpunk*. 
 
 ---
 
@@ -39,6 +43,9 @@ Conceituação completa da landing page de lançamento de **Neon Courier: UnderC
 #### 3. Piloto em Ação nos Túneis (Action Concept)
 ![Piloto em Ação](banner1.jpg)
 
+### 🎧 Trilha Sonora Oficial
+- **Música Tema:** [Ouvir no Suno AI (Neon Courier: UnderCity)](https://suno.com/s/JvqFG1OEGwReCGDr)
+- 
 ### ✍️ Destaques da Landing Page
 > **"A cidade não dorme. E a morte não espera."**  
 > *Você não entrega pacotes. Você entrega destinos.*
